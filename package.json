@@ -4,7 +4,7 @@
     "publishConfig": {
         "access": "public"
     },
-    "version": "0.0.5",
+    "version": "0.0.7",
     "license": "MIT",
     "main": "index.js",
     "author": {
@@ -27,20 +27,7 @@
         "email": "opensource@swellaby.com"
     },
     "homepage": "https://github.com/swellaby/renovate-config/blob/master/README.md",
-    "renovate-config": {
-        "default": {
-            "extends": [
-                "config:base",
-                ":preserveSemverRanges"
-            ],
-            "labels": [
-                "bug"
-            ]      
-        },
-        "assignees": [
-            "calebcartwright"
-        ]
-    },
+    "renovate-config": "index.js",
     "devDependencies": {
         "@swellaby/eslint-config": "^1.1.6",
         "chai": "^4.1.2",
