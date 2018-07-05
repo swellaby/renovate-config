@@ -3,14 +3,14 @@
 module.exports = {
     default: {
         extends: [
-            "config:base",
-            ":preserveSemverRanges"
+            'config:base',
+            ':preserveSemverRanges'
         ],
         assignees: [
-            "calebcartwright"
+            'calebcartwright'
         ],
         labels: [
-            "bug"
+            'dependencies'
         ]
     }
-}
+};
