@@ -10,4 +10,5 @@ test/
 .editorconfig
 .eslintignore
 .eslintrc.js
+.gitattributes
 renovate.json

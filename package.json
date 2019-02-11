@@ -1,63 +1,63 @@
 {
-    "name": "@swellaby/renovate-config",
-    "description": "Our renovate configuration module",
-    "publishConfig": {
-        "access": "public"
+  "name": "@swellaby/renovate-config",
+  "description": "Our renovate configuration module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Swellaby",
+    "email": "opensource@swellaby.com",
+    "url": "http://swellaby.com"
+  },
+  "contributors": [
+    {
+      "name": "Bailey Everts",
+      "url": "https://github.com/beverts312"
     },
-    "version": "1.0.0",
-    "license": "MIT",
-    "author": {
-        "name": "Swellaby",
-        "email": "opensource@swellaby.com",
-        "url": "http://swellaby.com"
-    },
-    "contributors": [
-        {
-            "name": "Bailey Everts",
-            "url": "https://github.com/beverts312"
-        },
-        {
-            "name": "Caleb Cartwright",
-            "url": "https://github.com/calebcartwright"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/swellaby/renovate-config.git"
-    },
-    "bugs": {
-        "url": "https://github.com/swellaby/renovate-config/issues",
-        "email": "opensource@swellaby.com"
-    },
-    "homepage": "https://github.com/swellaby/renovate-config/blob/master/README.md",
-    "renovate-config": {
-        "default": {
-            "extends": [
-                "config:base",
-                ":preserveSemverRanges"
-            ],
-            "assignees": [
-                "calebcartwright"
-            ],
-            "labels": [
-                "dependencies"
-            ]
-        }
-    },
-    "devDependencies": {
-        "@swellaby/eslint-config": "^1.1.6",
-        "chai": "^4.1.2",
-        "eslint": "^5.0.1",
-        "mocha": "^5.2.0",
-        "mocha-multi": "^1.0.1",
-        "rimraf": "^2.6.2"
-    },
-    "scripts": {
-        "build": "npm run lint && npm run test",
-        "lint": "eslint **/*.js",
-        "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
-        "version:tagless": "npm --no-git-tag-version version patch",
-        "prepublish:local": "npm run build && npm run version:tagless",
-        "publish:local": "npm publish"
+    {
+      "name": "Caleb Cartwright",
+      "url": "https://github.com/calebcartwright"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swellaby/renovate-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swellaby/renovate-config/issues",
+    "email": "opensource@swellaby.com"
+  },
+  "homepage": "https://github.com/swellaby/renovate-config/blob/master/README.md",
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base",
+        ":preserveSemverRanges"
+      ],
+      "assignees": [
+        "calebcartwright"
+      ],
+      "labels": [
+        "dependencies"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@swellaby/eslint-config": "^1.1.6",
+    "chai": "^4.2.0",
+    "eslint": "^5.13.0",
+    "mocha": "^5.2.0",
+    "mocha-multi": "^1.0.1",
+    "rimraf": "^2.6.3"
+  },
+  "scripts": {
+    "build": "npm run lint && npm run test",
+    "lint": "eslint **/*.js",
+    "test": "rimraf .testresults/ && mocha --opts test/mocha.opts",
+    "version:tagless": "npm --no-git-tag-version version patch",
+    "prepublish:local": "npm run build && npm run version:tagless",
+    "publish:local": "npm publish"
+  }
 }
