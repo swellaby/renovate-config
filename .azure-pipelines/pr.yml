@@ -20,5 +20,5 @@ steps:
       taskDisplayName: 'Publish unit test results'
       testResultsFormat: 'JUnit'
       testResultsFiles: 'xunit.xml'
-      searchFolder: '$(Build.SourcesDirectory)/.testresults/unit'
+      searchFolder: '$(Build.SourcesDirectory)/.testresults'
       testRunTitle: 'renovate-config::Unit Tests::PR - Build $(Build.BuildId)'
