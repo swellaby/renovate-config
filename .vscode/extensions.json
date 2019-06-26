@@ -5,6 +5,7 @@
     "christian-kohler.path-intellisense",
     "christian-kohler.npm-intellisense",
     "pflannery.vscode-versionlens",
-    "hbenl.vscode-mocha-test-adapter"
+    "hbenl.vscode-mocha-test-adapter",
+    "ms-azure-devops.azure-pipelines"
   ]
 }
