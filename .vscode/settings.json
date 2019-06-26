@@ -1,8 +1,11 @@
 {
-    "files.exclude": {
-        "**/.git": true,
-        "**/node_modules": true,
-        "**/*.tgz": true,
-        "**/.testresults/": true
-    }
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/*.tgz": true,
+    "**/.testresults/": true
+  },
+  "files.associations": {
+    "**/.azure-pipelines/**": "azure-pipelines"
+  },
 }
